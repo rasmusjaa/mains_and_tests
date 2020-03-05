@@ -6,13 +6,26 @@
 /*   By: rjaakonm <rjaakonm@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 15:36:40 by rjaakonm          #+#    #+#             */
-/*   Updated: 2019/12/03 15:54:29 by rjaakonm         ###   ########.fr       */
+/*   Updated: 2020/03/05 18:08:12 by rjaakonm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/incl/libft.h"
 #include "incl/ft_printf.h"
 #include <stdio.h>
+# define BLUE "\033[0;34m"
+# define CYAN "\033[0;36m"
+# define GREEN "\033[0;32m"
+# define MAGENTA "\033[0;35m"
+# define RED "\033[0;31m"
+# define YELLOW "\033[0;33m"
+# define BBLUE "\033[1;34m"
+# define BCYAN "\033[1;36m"
+# define BGREEN "\033[1;32m"
+# define BMAGENTA "\033[1;35m"
+# define BRED "\033[1;31m"
+# define BYELLOW "\033[1;33m"
+# define EOC "\033[0m"
 
 int			main()
 {
@@ -57,7 +70,7 @@ int			main()
 	printf(BGREEN);
 	printf("STRING:\n");
 	printf(BRED);
-	var = printf("%.09s was string and %s<null\n", a, NULL);
+	var = printf("%.009s was string and %s<null\n", a, NULL);
 	ft_putnbr(var);
 	ft_putendl(" returned");
 	ft_printf(BBLUE);
